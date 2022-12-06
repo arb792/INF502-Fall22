@@ -1,0 +1,43 @@
+def DNA(maximum_shift, approach, input_file):
+    string = (A, G, T, C)
+    string, repeat (11, len(string))
+         #sequence 1 = string make
+    #sequence 2 = string made
+    #maximum_shift = []
+    #print sequence 1
+    #print sequence 2
+    #find matches between sequence 1 and 2, based upon position
+
+
+
+
+
+def DNA(maximum_shift, approach, input_file):
+    print("Make a string with eleven integers using only A, G, T, C")
+    #try:
+        #dnastring1 = input ("Input values")
+        #dnastring1 (11, len(string))
+        #dnastring1 = int(dnastring1)
+    #except (needs to be a length error if not long enough)
+        #print("String is not long enough, please make sure it is eleven long")
+    #else:
+        #print("Thank you)
+    #print("Please state the maximum_shift number")
+        #try:
+            #maximum_shift = ("Maximum_shift is: ")
+            #maximum_shift = int(maximum_shift)
+        #except (ValueError):
+            #print ("The value typed is not an integer")
+        #else:
+            #print ("Thank you")
+
+
+
+
+class DNA:
+    def _init_(string1):
+        string1.__x = [A, G, T, C, G, T, C, A, G, C, A]
+    def printAttributes(string1):
+        print("x =", string.__x)
+    def translate(string1, dx, dy):
+        string1.__x +=

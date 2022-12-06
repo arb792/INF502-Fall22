@@ -1,0 +1,157 @@
+class Point:
+    def _init_(self):
+        self.__x = 0
+        self.__y = 0
+    def printAttributes(self):
+        print("x =", self.__x, "\ny =", self.__y)
+    def translate(self, dx, dy):
+        self.__x += dx
+        self.__y += dy
+    def distance_from_zero(self):
+        self.__x = 0
+        self.__y = 0
+    def distance(self, otherPoint):
+        self.__x = self-otherPoint
+        self.__y = self-otherPoint
+    def getX(self):
+        return self.__x
+    def getY(self):
+        return self.__y
+    def setX(self, newX):
+        self.__x = newX
+    def setY(self, newY):
+        self.__y = newY
+
+
+
+class Contact:
+    def _init_(self, name="", email=""):
+        self.__name = name
+        self.__email = email
+    def getName(self):
+        return self.__name
+    def getEmail(self):
+        return self.__email
+    def setName(self, name):
+        self.__name = name
+    def setEmail(self, email):
+        self.__email = email
+    def __str__(self):
+        return self.__name + "<" + self.__email + ">"
+
+c = Contact("name", "email")
+print(c)
+
+
+
+
+class Email:
+    def __init__(self, sender="", body="", subject="", draft=True, recipients=[]):
+        self.__sender = sender
+        self.__body = body
+        self.__subject = subject
+        self.__draft = draft
+        self.__recipients = recipients
+    def getSender(self):
+        return self.__sender
+    def getBody(self):
+        return self.__body
+    def getSubject(self):
+        return self.__subject
+    def getDraft(self):
+        return self.__draft
+    def getRecipients(self):
+        return self.__recipients
+    def setSender(self, sender):
+        return self.__sender
+    def setBody(self, body):
+        return self.__body
+    def setSubject(self, subject):
+        return self.__subject
+    def setDraft(self, draft):    
+        return self.__draft
+    def addReccipients(self, reipients):
+        self.__recipients.append(recipients)
+    def saveDraft(self):
+        self.__draft = True
+    def sendEmail(self):
+        if self.__sender == "" or self.__body == "" or self.__subject == "" or len(self.recipients) == 0
+            raise ValueError("Email can't be sent with empty fields.")
+        self.__draft = False
+    def __str__():
+        email = self.__recipients + "\n" + subject "\n" + body 
+
+
+
+class Email:
+    def __init__(self, sender="", body="", subject="", draft=True, recipients=[]):
+        self.__sender = sender
+        self.__body = body
+        self.__subject = subject
+        self.__draft = draft
+        self.__recipients = recipients
+    def getSender(self):
+        return self.__sender
+    def getBody(self):
+        return self.__body
+    def getSubject(self):
+        return self.__subject
+    def getDraft(self):
+        return self.__draft
+    def getRecipients(self):
+        return self.__recipients
+    def setSender(self, sender):
+        return self.__sender = sender
+    def setBody(self, body):
+        return self.__body = body
+    def setSubject(self, subject):
+        return self.__subject = subject
+    def setDraft(self, draft):    
+        return self.__draft = draft
+    def addReccipients(self, reipients):
+        self.__recipients.append(recipients)
+    def saveDraft(self):
+        self.__draft = True
+    def sendEmail(self):
+        if self.__sender == "" or self.__body == "" or self.__subject == "" or len(self.recipients) == 0
+            raise ValueError("Email can't be sent with empty fields.")
+        self.__draft = False
+    def __str__(self):
+        email =  self.__sender + "\n" + self.__subject "\n" + self.__body 
+
+
+class Email:
+    def __init__(self, sender="", body="", subject="", draft=True, recipients=[]):
+        self.__sender = sender
+        self.__body = body
+        self.__subject = subject
+        self.__draft = draft
+        self.__recipients = recipients
+    def getSender(self):
+        return self.__sender
+    def getBody(self):
+        return self.__body
+    def getSubject(self):
+        return self.__subject
+    def getDraft(self):
+        return self.__draft
+    def getRecipients(self):
+        return self.__recipients
+    def setSender(self, sender):
+        self.__sender = sender
+    def setBody(self, body):
+        self.__body = body
+    def setSubject(self, subject):
+        self.__subject = subject
+    def setDraft(self, draft):    
+        self.__draft = draft
+    def addReccipients(self, reipients):
+        self.__recipients.append(recipients)
+    def saveDraft(self):
+        self.__draft = True
+    def sendEmail(self):
+        if self.__sender == "" or self.__body == "" or self.__subject == "" or len(self.recipients) == 0:
+            raise ValueError("Email can't be sent with empty fields.")
+        self.__draft = False
+    def __str__(self):
+        email =  self.__sender + "\n" + self.__subject + "\n" + self.__body
